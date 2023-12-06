@@ -45,12 +45,11 @@ header > .container {
         text-align: left;
         font-size: 1rem;
         padding: 0.5rem;
-        background: rgba(255, 255, 255, 0.2);
         border-radius: 16px;
-        -webkit-box-shadow: 8px 8px 16px -6px rgba(255, 255, 255, 1);
-        -moz-box-shadow: 8px 8px 16px -6px rgba(255, 255, 255, 1);
-        box-shadow: 8px 8px 16px -6px rgba(255, 255, 255, 1);
-        border: 1px solid rgba(255, 255, 255, 0.28);
+        -webkit-box-shadow: 8px 8px 16px -6px #00719c;
+        -moz-box-shadow: 8px 8px 16px -6px #00719c;
+        box-shadow: 8px 8px 16px -6px #00719c;
+        border: 1px solid #00719c;;
     }
     & img {
         margin: 1rem;
@@ -91,6 +90,7 @@ header > .container {
 }
 .section-header {
     font-family: 'Playfair Display', serif;
+    margin-bottom: 2rem;
 }
 .about-box {
     display: flex;
@@ -105,7 +105,7 @@ header > .container {
         padding: 1rem 0rem;
     }
     & h2::before{
-        content: "¤";
+        content: "→";
         height: 10px;
         width: 10px;
         margin-right: 1rem;
@@ -156,4 +156,68 @@ header > .container {
     & h2 {
         margin-bottom: 1rem;
     }
+}
+#portfolio {
+    background: radial-gradient(circle, #00b5fd 0%, #00719c 45%);
+}
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    & div:last-child {
+        text-align: left;
+        padding: 1rem;
+        & h2 {
+            text-align: center;
+            color: orange;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            & a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    }
+}
+.contact-form {
+    margin: 1rem auto;
+    width: 80%;
+}
+.feedback-input {
+    color:white;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 1rem;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: #0e1111;
+    border:2px solid #00719c;
+    transition: all 0.3s;
+    padding: 0.8rem;
+    margin-bottom: 15px;
+    width:100%;
+    outline:0;
+  }
+  
+  .feedback-input:focus { border:2px solid #00b5fd; }
+  
+  textarea {
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+  }
+form > .button {
+    margin: auto;
+}
+.contact-dscr {
+    padding: 1rem;
+}
+#contact {
+    background: radial-gradient(circle, #00719c 5%, #0e1111 55%);
+}
+.footer {
+    padding: 0.6rem;
+    background-color: #151a1a;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
 }
