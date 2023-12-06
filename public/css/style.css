@@ -39,6 +39,7 @@ hr {
     & h1 {
         font-family: 'Playfair Display', serif;
         margin-bottom: 1rem;
+        animation: reveal-left 1.5s;
         & span {
             color: #00719c;
         }
@@ -46,6 +47,7 @@ hr {
     & h2 {
         font-size: 1.2rem;
         text-transform: uppercase;
+        animation: reveal-left 3s;
     }
     & p {
         text-align: left;
@@ -55,7 +57,8 @@ hr {
         -webkit-box-shadow: 8px 8px 16px -6px #00719c;
         -moz-box-shadow: 8px 8px 16px -6px #00719c;
         box-shadow: 8px 8px 16px -6px #00719c;
-        border: 1px solid #00719c;;
+        border: 1px solid #00719c;
+        animation: reveal 4s;
     }
     & img {
         margin: 1rem;
@@ -96,7 +99,7 @@ hr {
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Merriweather', serif;
     margin-bottom: 2rem;
 }
 #about {
@@ -126,49 +129,28 @@ hr {
 }
 #skill {
     background: radial-gradient(circle, #00719c 5%, #0e1111 55%);
-
-}
-.skills-box > div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
 }
 .skill-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    color: aqua;
-    border-radius: 100%;
-    font-weight: 600;
-    letter-spacing: 1px;
-    border: 2px solid #ffffff46;
-    width: 110px;
-    height: 110px;
 }
-.skill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90px;
-    height: 90px;
-    background-color: #0e1111;
-    border-radius: 100%;
-    border: 5px solid #00719c;
-}
-.skill-dscr {
-    padding: 3rem 0.5rem;
-}
-.skill-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.skill-box {
+    margin: 1rem;
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 1);
     padding: 1rem;
-    & h2 {
-        margin-bottom: 1rem;
+}
+.skill-left {
+    & i {
+        font-size: 2rem;
+    }
+}
+.skill-right {
+    & h3 {
+        margin-bottom: 0.4rem;
     }
 }
 #portfolio {
@@ -191,16 +173,21 @@ hr {
         }
     }
 }
+.portfolio-container > div:last-child > a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.portfolio-container > div:last-child > a> i {
+    margin-top: 1rem;
+    padding: 1rem;
+}
 .contact-form {
     margin: auto;
     padding: 1rem;
     width: 80%;
 }
 .feedback-input {
-    color:white;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight:500;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 5px;
     line-height: 22px;
     background-color: #0e1111;
@@ -227,7 +214,7 @@ form > .button {
 }
 #contact {
     background: rgb(0,113,156);
-    background: linear-gradient(144deg, rgba(0,113,156,1) 0%, rgba(14,17,17,1) 67%);}
+    background: linear-gradient(144deg, #00719c 0%, rgba(14,17,17,1) 67%);}
 .footer {
     padding: 0.8rem 1rem ;
     background-color: #151a1a;
@@ -287,6 +274,9 @@ color: #fff;
     .contact-button {
         display: none;
     }
+    .skill-box {
+        width: 40%;
+    }
 }
 @media (min-width: 1230px) {
     .contact-button {
@@ -326,6 +316,7 @@ color: #fff;
         justify-content: center;
         align-items: center;
         font-size: 2.5rem;
+        animation: reveal 3.5s ease-out;
         & a {
             color: #fff;
             transition: all 0.4s;
@@ -341,6 +332,7 @@ color: #fff;
     .right-site {
         display: block;
         width: 40%;
+        animation: reveal-right 3.5s ;
         & img {
             width: 250px;
             height: auto;
@@ -370,7 +362,7 @@ color: #fff;
         justify-content: space-around;
         align-items: center;
         & div > a > img {
-            width: 300px;
+            width: 250px;
         }
     }
     .portfolio-container > div:last-child {
@@ -379,4 +371,31 @@ color: #fff;
             text-align: left;
         }
     }
+    .contact-form {
+        width: 40%;
+    }
 }
+
+  .reveal{
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal-right{
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal-left{
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal-bot{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .active{
+    transform: translateY(0);
+    opacity: 1;
+  }

@@ -8,17 +8,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon-16x16.png">
     <link rel="manifest" href="/resources/site.webmanifest">
-    <link rel="mask-icon" href="/resources/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ff0000">
+    <link rel="mask-icon" href="/resources/safari-pinned-tab.svg">
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Poppins&display=swap" rel="stylesheet">    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -63,31 +57,31 @@
       <div class="container">
         <div class="home-box">
           <div class="left-site">
-            <h1>
+            <h1 class="reveal-left">
               <span>Hello</span> I'm<br />
               Adam Olszewski
             </h1>
-            <hr class="headhr">
-            <h2>Web Developer & Designer</h2>
+            <hr class="headhr reveal-left">
+            <h2 class="reveal-left">Web Developer & Designer</h2>
             <img
               src="/resources/me1.jpeg"
               alt="me"
               width="150px"
               height="auto"
             />
-            <p>
+            <p class="reveal-bot">
               I am a passionate web developer with experience in creating
               responsive websites. My approach to projects is based on
               precision, creativity, and the latest industry standards.
             </p>
-            <div class="socials">
+            <div class="socials reveal-bot">
               <a href="https://github.com/Olszuss/"><i class="fa-brands fa-github"></i></a>
               <a href="https://www.linkedin.com/in/adam-olszewski96/"><i class="fa-brands fa-linkedin"></i></a>
               <a href="https://wa.me/48536914881"><i class="fa-brands fa-whatsapp"></i></a>
               <a href="https://discordapp.com/users/Olszus"><i class="fa-brands fa-discord"></i></a>
             </div>
           </div>
-          <div class="right-site">
+          <div class="right-site reveal-right">
             <img
             src="/resources/me1.jpeg"
               alt="picture"
@@ -114,7 +108,7 @@
         />
       </h2>
       <div class="about-box container">
-        <div class="about-left">
+        <div class="about-left reveal-left">
           <img
             src="/resources/image0-0.png"
             alt="picture of me"
@@ -123,21 +117,21 @@
           />
         </div>
         <div class="about-right">
-          <h2>About Me</h2>
-          <p>
+          <h2 class="reveal-left">About Me</h2>
+          <p class="reveal-right">
             Hello there! I'm a 27-year-old enthusiast hailing from Silesia. My
             passion lies in the world of programming, and you'll often find me
             immersed in lines of code during my free time.
           </p>
-          <h2>Coding Journey</h2>
-          <p>
+          <h2 class="reveal-left">Coding Journey</h2>
+          <p class="reveal-right">
             I have honed my skills in crafting websites using HTML, CSS, and
             JavaScript, with a particular focus on the dynamic React framework.
             The art of turning ideas into functional and visually appealing web
             pages is what keeps me energized and engaged.
           </p>
-          <h2>Professional Background</h2>
-          <p>
+          <h2 class="reveal-left">Professional Background</h2>
+          <p class="reveal-right">
             With years of experience in customer-facing roles, I have developed
             a knack for understanding and meeting client needs. I believe in the
             power of effective communication and collaboration to deliver
@@ -158,74 +152,90 @@
           />
           My Skills
         </h2>
-        <div class="skills-box">
-          <div>
-            <div class="skill-container">
-              <div class="skill">&lt;HTML/&gt;</div>
+        <div class="skill-container">
+          <div class="skill-box reveal-left">
+            <div class="skill-left">
+              <i class="fa-regular fa-copyright"></i>
             </div>
-            <div class="skill-dscr">
-              I craft website structures using HTML, providing a robust
-              foundation for functionality and semantics to ensure an optimal
-              user experience.
+            <div class="skill-right">
+              <h3>Branding</h3>
+              <p>Strong understanding of brand identity and design principles.
+                Ability to create and maintain a consistent brand image across various platforms.
+                Experience in developing brand guidelines and implementing them in design and content.</p>
+            </div>
+          </div>
+          <div class="skill-box reveal-right">
+            <div class="skill-left">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+            <div class="skill-right">
+              <h3>Web Development</h3>
+              <p>Proficient in front-end and back-end development.
+                Strong knowledge of HTML, CSS, JavaScript, and popular frameworks such as React.</p>
+            </div>
+          </div>
+          <div class="skill-box reveal-left">
+            <div class="skill-left">
+              <i class="fa-brands fa-node-js"></i>
+            </div>
+            <div class="skill-right">
+              <h3>Programming Languages</h3>
+              <p>Expertise in Node.JS, JavaScript.
+                Ability to quickly learn and adapt to new programming languages and technologies.</p>
+            </div>
+          </div>
+          <div class="skill-box reveal-right">
+            <div class="skill-left">
+              <i class="fa-solid fa-paintbrush"></i>
+            </div>
+            <div class="skill-right">
+              <h3>UI/UX Design</h3>
+              <p>Skilled in creating visually appealing and user-friendly interfaces.
+                Understanding of user experience principles and best practices.</p>
+            </div>
+          </div>
+          <div class="skill-box reveal-left">
+            <div class="skill-left">
+              <i class="fa-solid fa-ranking-star"></i>
+            </div>
+            <div class="skill-right">
+              <h3>SEO Marketing</h3>
+              <p>In-depth knowledge of search engine optimization (SEO) strategies and techniques.
+                Ability to optimize websites for search engines, improving visibility and ranking.</p>
+            </div>
+          </div>
+          <div class="skill-box reveal-right">
+            <div class="skill-left">
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
+            <div class="skill-right">
+              <h3>Version Control</h3>
+              <p>Familiarity with version control systems, such as Git.
+                Ability to collaborate with a team and manage code repositories efficiently.</p>
+            </div>
+          </div>
+          <div class="skill-box reveal-left">
+            <div class="skill-left">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="skill-right">
+              <h3>Continuous Learning</h3>
+              <p>Proactive approach to staying updated on the latest industry trends and technologies.
+                Willingness to participate in professional development and training opportunities.</p>
+            </div>
+          </div>
+          <div class="skill-box reveal-right">
+            <div class="skill-left">
+              <i class="fa-regular fa-face-smile"></i>
+            </div>
+            <div class="skill-right">
+              <h3>Communication Skills</h3>
+              <p>Effective communication with both technical and non-technical stakeholders.
+                Ability to translate technical jargon into understandable terms.
+                Strong documentation skills for code, processes, and project-related information.</p>
             </div>
           </div>
         </div>
-        <div class="skills-box">
-          <div>
-            <div class="skill-dscr">
-              I refine the look and style of websites with CSS, employing
-              advanced techniques to create responsive, visually appealing
-              designs with attention to detail.
-            </div>
-            <div class="skill-container">
-              <div class="skill">.CSS{}</div>
-            </div>
-          </div>
-        </div>
-        <div class="skills-box">
-          <div>
-            <div class="skill-container">
-              <div class="skill">JS();</div>
-            </div>
-            <div class="skill-dscr">
-              My JavaScript not only adds interactivity but dynamically shapes
-              pages, delivering users smooth and engaging experiences.
-            </div>
-          </div>
-        </div>
-        <div class="skills-box">
-          <div>
-            <div class="skill-dscr">
-              With a deep understanding of React, I build modern, modular user
-              interfaces, reducing time-to-delivery for sophisticated web
-              applications.
-            </div>
-            <div class="skill-container">
-              <div class="skill">&lt;React/&gt;</div>
-            </div>
-          </div>
-        </div>
-        <div class="skills-box">
-          <div>
-            <div class="skill-container">
-              <div class="skill">Node.JS</div>
-            </div>
-            <div class="skill-dscr">
-              I use Node.js to develop fast and scalable server-side
-              applications, harnessing its event-driven architecture for
-              efficient, responsive back-end solutions.
-            </div>
-          </div>
-        </div>
-        <div class="skill-footer">
-          <h2>But that's just the beginning.</h2>
-          <p>
-            My skills encompass an even broader array of tools and technologies,
-            ensuring a comprehensive approach to projects and their effective
-            implementation.
-          </p>
-        </div>
-      </div>
     </section>
 
     <section id="portfolio">
@@ -241,11 +251,13 @@
         </h2>
         <div class="portfolio-container">
             <div>
-                <a href="#"><img src="/resources/portfolio1.png" alt="ZZ-consulting" width="150px" height="auto"></a>
+                <a><img src="/resources/portfolio1.png" alt="ZZ-consulting" width="150px" height="auto"></a>
             </div>
             <div>
                 <h2><a href="#">ZZ-Consulting Company</a></h2>
                 <p>A website created for a small insurance company called ZZ-Consulting. It utilizes HTML, CSS, JS, and Node.js. On the backend of the website, I implemented a contact form with server-side validation and a PDF generator.</p>
+                <a href="https://github.com/Olszuss/ZZ-Consulting/" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-solid fa-globe"></i></a>
             </div>
         </div>
       </div>
@@ -286,5 +298,6 @@
         <img src="/resources/AODesign.webp" alt="logotype" width="25px" height="13px">
     </div>
     </footer>
+    <script src="reveal.js"></script>
   </body>
 </html>
