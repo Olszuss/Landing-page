@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adam Olszewski</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicon-16x16.png">
+    <link rel="manifest" href="/resources/site.webmanifest">
+    <link rel="mask-icon" href="/resources/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ff0000">
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +27,7 @@
     />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="container">
         <div class="logo">
           <img
@@ -34,23 +41,23 @@
         <nav>
           <div class="navbar">
             <ul>
-              <li><a class="nav-active" href="#home">Home</a></li>
+              <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#skill">Skill</a></li>
               <li><a href="#portfolio">Portfolio</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
-          <div class="contact-button">
-            <a href="#contact"
-              ><button class="button second">
-                <i class="fa-solid fa-paper-plane"></i>Contact
-              </button></a
-            >
-          </div>
         </nav>
+        <div class="contact-button">
+          <a href="#contact"
+            ><button class="button second">
+              <i class="fa-solid fa-paper-plane"></i>Contact
+            </button></a
+          >
+        </div>
       </div>
-    </header>
+
 
     <section id="home">
       <div class="container">
@@ -60,6 +67,7 @@
               <span>Hello</span> I'm<br />
               Adam Olszewski
             </h1>
+            <hr class="headhr">
             <h2>Web Developer & Designer</h2>
             <img
               src="/resources/me1.jpeg"
@@ -72,25 +80,31 @@
               responsive websites. My approach to projects is based on
               precision, creativity, and the latest industry standards.
             </p>
-            <div class="home-buttons-box">
-              <button class="button">Contact With Me</button>
-              <button class="button second">Portfolio</button>
+            <div class="socials">
+              <a href="https://github.com/Olszuss/"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/adam-olszewski96/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://wa.me/48536914881"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://discordapp.com/users/Olszus"><i class="fa-brands fa-discord"></i></a>
             </div>
           </div>
           <div class="right-site">
             <img
-              src="https://images.unsplash.com/photo-1519755898819-cef8c3021d6f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW5vbnltb3VzJTIwbWFufGVufDB8fDB8fHww"
+            src="/resources/me1.jpeg"
               alt="picture"
-              width="300px"
-              height="300px"
+              width="400px"
+              height="400px"
             />
           </div>
         </div>
+        <div class="home-buttons-box">
+          <a href="#contact"><button class="button">Contact With Me</button></a>
+          <a href="#portfolio"><button class="button second">Portfolio</button></a>
+        </div>
       </div>
     </section>
-
+  </header>
     <section id="about">
-      <h1 class="section-header">
+      <h2 class="section-header">
         About Me
         <img
           src="/resources/AODesign.webp"
@@ -98,7 +112,7 @@
           width="50px"
           height="auto"
         />
-      </h1>
+      </h2>
       <div class="about-box container">
         <div class="about-left">
           <img
@@ -135,7 +149,7 @@
 
     <section id="skill">
       <div class="container">
-        <p class="section-header">
+        <h2 class="section-header">
           <img
             src="/resources/AODesign.webp"
             alt="logo"
@@ -143,7 +157,7 @@
             height="auto"
           />
           My Skills
-        </p>
+        </h2>
         <div class="skills-box">
           <div>
             <div class="skill-container">
@@ -216,7 +230,7 @@
 
     <section id="portfolio">
       <div class="container">
-        <p class="section-header">
+        <h2 class="section-header">
           Portfolio 
           <img
             src="/resources/AODesign.webp"
@@ -224,7 +238,7 @@
             width="50px"
             height="auto"
           />
-        </p>
+        </h2>
         <div class="portfolio-container">
             <div>
                 <a href="#"><img src="/resources/portfolio1.png" alt="ZZ-consulting" width="150px" height="auto"></a>
@@ -238,7 +252,7 @@
     </section>
     <section id="contact">
         <div class="container">
-            <p class="section-header">
+            <h2 class="section-header">
                 <img
                 src="/resources/AODesign.webp"
                 alt="logo"
@@ -246,9 +260,15 @@
                 height="auto"
               />
                Contact me
-            </p>
+            </h2>
             <p class="contact-dscr">I'm always eager to tackle new challenges and collaborate on exciting projects. Whether you have questions, ideas, or just want to connect, feel free to reach out. I'm looking forward to the opportunity to bring your digital visions to life!</p>
             <hr />
+            <div class="socials-contact">
+              <a href="https://github.com/Olszuss/"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/adam-olszewski96/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://wa.me/48536914881"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="https://discordapp.com/users/Olszus"><i class="fa-brands fa-discord"></i></a>
+            </div>
             <div class="contact-form">
                 <form>
                     <input name="name" type="text" class="feedback-input" placeholder="Name" />   
@@ -262,7 +282,7 @@
 
     <footer>
         <div class="footer">
-        <p>Copyright &copy; 2023</p>
+        <p>© 2023 AODesign. All rights reserved.</p>
         <img src="/resources/AODesign.webp" alt="logotype" width="25px" height="13px">
     </div>
     </footer>
