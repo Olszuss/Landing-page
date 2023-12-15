@@ -103,6 +103,7 @@ hr {
     margin-bottom: 2rem;
 }
 #about {
+    overflow: hidden;
     background-color: #00719c;
     padding-bottom: 2rem;
     background: radial-gradient(circle, #00b5fd 0%, #00719c 45%);
@@ -129,6 +130,7 @@ hr {
 }
 #skill {
     background: radial-gradient(circle, #00719c 5%, #0e1111 55%);
+    overflow: hidden;
 }
 .skill-container {
     display: flex;
@@ -158,7 +160,10 @@ hr {
 }
 .portfolio-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 1rem;
     & div:last-child {
         text-align: left;
         padding: 1rem;
@@ -357,6 +362,7 @@ color: #fff;
         width: 30%;
     }
     .portfolio-container {
+        flex-direction: row;
         width: 80%;
         margin: auto;
         justify-content: space-around;

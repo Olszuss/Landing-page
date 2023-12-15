@@ -10,6 +10,7 @@
     <link rel="manifest" href="/resources/site.webmanifest">
     <link rel="mask-icon" href="/resources/safari-pinned-tab.svg">
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/magnific-popup.css" media="screen" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Poppins&display=swap" rel="stylesheet">    <link
@@ -251,7 +252,7 @@
         </h2>
         <div class="portfolio-container">
             <div>
-                <a><img src="/resources/portfolio1.png" alt="ZZ-consulting" width="150px" height="auto"></a>
+                <a class="image-link" data-mfp-src="/resources/portfolio1.png" href="/resources/portfolio1.png"><img src="/resources/portfolio1.png" alt="ZZ-consulting" width="150px" height="auto"></a>
             </div>
             <div>
                 <h2><a href="#">ZZ-Consulting Company</a></h2>
@@ -260,6 +261,19 @@
                 <a href="#"><i class="fa-solid fa-globe"></i></a>
             </div>
         </div>
+        <hr>
+        <div class="portfolio-container">
+          <div>
+              <a class="image-link" href="/resources/adminware.png"><img src="/resources/adminware.png" alt="Adminware" width="150px" height="auto"></a>
+          </div>
+          <div>
+              <h2><a href="http://adminware.pl">Adminware</a></h2>
+              <p>A website created for a small insurance company called ZZ-Consulting. It utilizes HTML, CSS, JS, and Node.js. On the backend of the website, I implemented a contact form with server-side validation and a PDF generator.</p>
+              <a href="https://github.com/Olszuss/adminware/" target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="http://adminware.pl"><i class="fa-solid fa-globe"></i></a>
+          </div>
+      </div>
+
       </div>
     </section>
     <section id="contact">
@@ -299,5 +313,17 @@
     </div>
     </footer>
     <script src="reveal.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/magnific-popup/jquery.magnific-popup.js"></script>
+    <script>
+      $(document).ready(function() {
+         $('.image-link').magnificPopup({ 
+            type: 'image',
+            gallery:{enabled:true},
+            removalDelay: 300,       // Delay in milliseconds before popup is removed
+            mainClass: 'mfp-fade'   // Class that is added to popup wrapper and background
+         });
+      });
+   </script>
   </body>
 </html>
